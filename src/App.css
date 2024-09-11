@@ -1,0 +1,13 @@
+/* App.css */
+
+/* Reset some default browser styles (optional if using Tailwind Preflight) */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* General styling can be added here, but you might not need much with Tailwind */
