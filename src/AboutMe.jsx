@@ -5,8 +5,8 @@ import melogo from "./assets/me-cartoon.png";
 
 export const AboutMe = () => {
   return (
-    <div className="m-24 bg-[#f2fa9b] w-11/12 max-w-8xl lg:max-w-[1200px] xl:max-w-[1500px] px-16 rounded-xl shadow-lg flex flex-col items-center relative">
-      <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[150px] font-cooper text-[#1f2e13] opacity-100 text-center mt-8 mb-8 lg:mb-16">
+    <div className=" m-40 bg-[#f2fa9b] w-11/12 rounded-2xl  lg:max-w-[1200px] xl:max-w-[1500px] px-16 rounded- shadow-lg flex flex-col items-center relative ">
+      <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[150px] font-cooper text-[#1f2e13] opacity-100 text-center mt-8 mb-8 lg:mb-16 ">
         AHMAD ARAB
       </h1>
 
@@ -23,7 +23,7 @@ export const AboutMe = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1f2e13] text-[#f2fa9b] p-3 rounded-full hover:bg-[#1a260f]"
+              className="bg-[#1f2e13]  text-[#f2fa9b] p-3 rounded-full hover:bg-[#1a260f]"
             >
               <FaFacebookF size={24} />
             </a>
@@ -38,7 +38,7 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div className="z-30 w-full lg:w-1/2 -mt-[10%]">
+        <div className="z-0 w-full lg:w-1/2 -mt-[10%]">
           <img src={melogo} alt="Ahmad Arab" className="" />
         </div>
 
