@@ -1,4 +1,7 @@
 /* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Reset some default browser styles (optional if using Tailwind Preflight) */
 html,

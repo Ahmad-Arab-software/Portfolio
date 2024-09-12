@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect } from "react";
 import "./App.css";
-
-import { AboutMe } from "./AboutMe";
+import { AboutMe } from "./AboutMe.jsx";
 import { Projects } from "./Projecten";
 
 const App = () => {
@@ -19,8 +18,8 @@ const App = () => {
         </a>
       </nav>
       {/* you can command this to view projecten */}
-      <AboutMe />
-      {/* <Projects /> */}
+      {/* <AboutMe /> */}
+      <Projects />
     </div>
   );
 };

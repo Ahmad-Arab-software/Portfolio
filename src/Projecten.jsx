@@ -1,3 +1,3 @@
 export const Projects = () => {
-  return <div className="bg-green-500 w-full h-96"></div>;
+  return <div className="flex flex-col lg:flex-row justify-between items-center w-full relative z-10"></div>;
 };
