@@ -1,7 +1,7 @@
-import React, { Suspense, useEffect } from "react";
-import { FaFacebookF, FaLinkedinIn, FaDownload } from "react-icons/fa";
-import "./App.css";
+import React from "react";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import melogo from "./assets/me-cartoon.png";
+import "./App.css";
 
 export const AboutMe = () => {
   return (
@@ -50,7 +50,7 @@ export const AboutMe = () => {
           </p>
           <div className="w-full flex justify-end">
             <a
-              href="./assets/cv.pdf"
+              href="../public/cv.pdf"
               download
               className="justify-self-end bg-[#1f2e13] text-[#f2fa9b] p-3 rounded-full w-max h-max hover:bg-[#1a260f] flex items-center justify-center mx-auto lg:mx-0"
             >
@@ -62,3 +62,5 @@ export const AboutMe = () => {
     </div>
   );
 };
+
+export default AboutMe;
