@@ -23,15 +23,15 @@ const cards = [
 
 const App = () => {
   const { width, height } = useWindowSize();
-  const [order, setOrder] = useState(cards.map((_, index) => index));
+  const [order, setOrder] = useState(() => cards.map((_, index) => index));
   const containerRef = useRef(null);
-  const enableCards = width >= 1536
+  const enableCards = width >= 1536;
 
   useEffect(() => {
     if (!enableCards) {
-      setOrder(cards.map((_, index) => index))
+      setOrder(cards.map((_, index) => index));
     }
-  }, [width])
+  }, [width]);
 
   useEffect(() => {
     const handleWheel = (e) => {
@@ -49,29 +49,68 @@ const App = () => {
     window.addEventListener("wheel", handleWheel, { passive: false });
     return () => window.removeEventListener("wheel", handleWheel);
   }, [width]);
+  useEffect(() => {
+    console.log(order.map((index) => cards[index].id));
+  }, [order]);
 
+  const switchToCard = (targetCard) => {
+    setOrder((prev) =>
+      prev.slice().sort((a, b) => {
+        if (cards[a].id === targetCard) return -1;
+        if (cards[b].id === targetCard) return 1;
+        return 0;
+      })
+    );
+  };
+
+  const scrollToId = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="bg-[#1f2e13] min-h-screen flex flex-col items-center">
       {/* Navigation bar */}
       <nav className="w-full flex justify-center bg-[#1f2e13] py-4 text-[#f2fa9b] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
-        <a
+        <button
           href="#home"
           className="mx-2 sm:mx-3 md:mx-4 hover:text-yellow-300 p-2 sm:p-3 md:p-4"
+          onClick={() => {
+            if (enableCards) {
+              switchToCard("aboutMe");
+            } else {
+              scrollToId("aboutMe");
+            }
+          }}
         >
           Home
-        </a>
-        <a
-          href="#projects"
+        </button>
+        <button
           className="mx-2 sm:mx-3 md:mx-4 hover:text-yellow-300 p-2 sm:p-3 md:p-4"
+          onClick={() => {
+            if (enableCards) {
+              switchToCard("projects");
+            } else {
+              scrollToId("projects");
+            }
+          }}
         >
           Projecten
-        </a>
-        <a
+        </button>
+        <button
           href="#contact"
           className="mx-2 sm:mx-3 md:mx-4 hover:text-yellow-300 p-2 sm:p-3 md:p-4"
+          onClick={() => {
+            if (enableCards) {
+              switchToCard("contact");
+            } else {
+              scrollToId("contact");
+            }
+          }}
         >
           Contact
-        </a>
+        </button>
       </nav>
       <div
         ref={containerRef}
@@ -83,13 +122,18 @@ const App = () => {
             <div
               key={cards[index].id}
               className={`w-10/12 h-max 2xl:col-start-1 2xl:row-start-1 flex items-center justify-center card`}
-              style={enableCards ? {
-                transform: `scaleX(${1 + position * 0.01}) scaleY(${
-                  1 - position * 0.05
-                }) translateX(${position * 25}px)`,
-                zIndex: cards.length - position,
-                filter: position === 0 ? "none" : `brightness(${1 - 0.3})`,
-              } : {}}
+              style={
+                enableCards
+                  ? {
+                      transform: `scaleX(${1 + position * 0.01}) scaleY(${
+                        1 - position * 0.05
+                      }) translateX(${position * 25}px)`,
+                      zIndex: cards.length - position,
+                      filter:
+                        position === 0 ? "none" : `brightness(${1 - 0.3})`,
+                    }
+                  : {}
+              }
             >
               {cards[index].render}
             </div>
