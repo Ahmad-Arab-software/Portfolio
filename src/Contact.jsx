@@ -69,7 +69,7 @@ export const Contact = () => {
         </div>
         <div className="mt-4">
           <p className="font-bold text-lg">Adres</p>
-          <p>Rotterdam, Krimpen aan den IJssel,Vliegerzeil 7</p>
+          <p>Rotterdam</p>
         </div>
         <div className="mt-4">
           <p className="font-bold text-lg">E-mail</p>
@@ -82,10 +82,7 @@ export const Contact = () => {
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
           Stuur mij een bericht
         </h2>
-        <form
-          className="flex flex-col gap-4"
-          onSubmit={handleSubmit}
-        >
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
