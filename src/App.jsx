@@ -2,7 +2,7 @@ import React, { Suspense, useEffect } from "react";
 import "./App.css";
 import { AboutMe } from "./AboutMe.jsx";
 import { Projects } from "./Projecten";
-import {Contact} from "./Contact.jsx"
+import { Contact } from "./Contact.jsx"
 
 const App = () => {
   return (
@@ -38,7 +38,7 @@ const App = () => {
         <Projects />
         {/* contact Section */}
         <Contact />
-        
+
       </div>
     </div>
   );

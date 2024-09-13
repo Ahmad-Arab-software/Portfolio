@@ -159,11 +159,10 @@ export const Projects = () => {
               <div key={project.id} className="flex gap-2 items-center">
                 <button
                   onClick={() => handleProjectClick(project.id)}
-                  className={`px-4 py-2 rounded-lg text-base sm:text-lg ${
-                    selectedProject.id === project.id
+                  className={`px-4 py-2 rounded-lg text-base sm:text-lg ${selectedProject.id === project.id
                       ? "border-b-4 border-[#1f2e13] underline font-bold"
                       : "hover:underline"
-                  }`}
+                    }`}
                   style={{
                     backgroundColor:
                       selectedProject.id === project.id ? "#dce57d" : "#f2fa9b",

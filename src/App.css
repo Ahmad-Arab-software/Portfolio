@@ -1,12 +1,5 @@
-
-/* Reset some default browser styles (optional if using Tailwind Preflight) */
-html,
-body,
-#root {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100%;
+  font-family: 'Cooper Black', sans-serif;
+  /* Or your chosen font */
 }
-
-/* General styling can be added here, but you might not need much with Tailwind */
