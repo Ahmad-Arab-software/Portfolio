@@ -3,20 +3,12 @@
 @tailwind utilities;
 
 /* Custom font import */
-:root {
-  font-family: "Cooper", Black;
-}
+
 
 /* Optional: Define some global typography defaults */
 body {
   font-family: "Cooper";
   background-color: #242424;
-}
-
-a {
   font-weight: 500;
-}
 
-button {
-  font-family: "Cooper";
 }
