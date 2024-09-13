@@ -5,7 +5,7 @@ import melogo from "./assets/me-cartoon.png";
 
 export const AboutMe = () => {
   return (
-    <div className=" m-40 bg-[#f2fa9b] w-11/12 rounded-2xl  lg:max-w-[1200px] xl:max-w-[1500px] px-16 rounded- shadow-lg flex flex-col items-center relative ">
+    <div className="bg-[#f2fa9b] w-full h-full rounded-2xl px-16 py-5 md:py-0 shadow-lg flex flex-col items-center relative ">
       <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[150px] font-cooper text-[#1f2e13] opacity-100 text-center mt-8 mb-8 lg:mb-16 ">
         AHMAD ARAB
       </h1>
@@ -38,8 +38,8 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div className="z-0 w-full lg:w-1/2 -mt-[10%]">
-          <img src={melogo} alt="Ahmad Arab" className="" />
+        <div className="z-0 w-full lg:w-1/2 lg:-mt-36">
+          <img src={melogo} alt="Ahmad Arab" />
         </div>
 
         <div className="w-full lg:w-1/3 text-center lg:text-right">

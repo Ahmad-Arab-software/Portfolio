@@ -50,7 +50,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="m-4 sm:m-12 md:m-16 lg:m-24 bg-[#f2fa9b] w-11/12 max-w-8xl lg:max-w-[1200px] xl:max-w-[1500px] px-4 sm:px-8 lg:px-16 py-12 rounded-xl shadow-lg flex flex-col lg:flex-row items-center relative"
+      className="bg-[#f2fa9b] w-full h-full px-4 sm:px-8 lg:px-16 py-12 rounded-2xl shadow-lg flex flex-col lg:flex-row items-center relative"
     >
       {/* Left: Contact Info */}
       <div className="flex-1 text-left mb-8 lg:mb-0">
@@ -92,7 +92,7 @@ export const Contact = () => {
             placeholder="Naam"
             value={formData.name}
             onChange={handleChange}
-            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-style"
+            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-gray-600"
             required
           />
           <input
@@ -101,7 +101,7 @@ export const Contact = () => {
             placeholder="E-mail"
             value={formData.email}
             onChange={handleChange}
-            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-style"
+            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-gray-600"
             required
           />
           <textarea
@@ -109,7 +109,7 @@ export const Contact = () => {
             placeholder="Bericht"
             value={formData.message}
             onChange={handleChange}
-            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-style"
+            className="border border-transparent outline outline-2 outline-[#1f2e13] bg-transparent rounded-lg p-2 placeholder-gray-600"
             rows="5"
             required
           />

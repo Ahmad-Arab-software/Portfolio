@@ -97,24 +97,24 @@ export const Projects = () => {
   return (
     <div
       id="projects"
-      className="m-4 sm:m-12 md:m-16 lg:m-24 bg-[#f2fa9b] w-11/12 max-w-8xl lg:max-w-[1200px] xl:max-w-[1500px] px-4 sm:px-8 lg:px-16 py-12 rounded-xl shadow-lg flex flex-col items-center relative"
+      className=" bg-[#f2fa9b] w-full h-full p-8 rounded-2xl shadow-lg flex flex-col items-center gap-4"
     >
-      <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-[100px] font-cooper text-[#1f2e13] text-center mb-8 lg:mb-16">
+      <h1 className="text-2xl sm:text-6xl font-cooper text-[#1f2e13] text-center">
         PROJECTS
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
         {/* Left: Project Image */}
         <div
-          className="relative group cursor-pointer w-full h-[350px] sm:h-[450px] lg:h-[550px]"
+          className="grid group cursor-pointer w-full h-full"
           onClick={() => window.open(selectedProject.url, "_blank")}
         >
           <img
             src={selectedProject.image}
             alt={selectedProject.title}
-            className="rounded-lg w-full h-full object-cover"
+            className="rounded-lg object-cover col-start-1 row-start-1 h-full"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+          <div className="col-start-1 row-start-1 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
             <div className="text-white text-2xl font-bold">
               Project Bekijken <FaExternalLinkAlt className="inline ml-2" />
             </div>
@@ -159,10 +159,11 @@ export const Projects = () => {
               <div key={project.id} className="flex gap-2 items-center">
                 <button
                   onClick={() => handleProjectClick(project.id)}
-                  className={`px-4 py-2 rounded-lg text-base sm:text-lg ${selectedProject.id === project.id
+                  className={`px-4 py-2 rounded-lg text-base sm:text-lg ${
+                    selectedProject.id === project.id
                       ? "border-b-4 border-[#1f2e13] underline font-bold"
                       : "hover:underline"
-                    }`}
+                  }`}
                   style={{
                     backgroundColor:
                       selectedProject.id === project.id ? "#dce57d" : "#f2fa9b",
