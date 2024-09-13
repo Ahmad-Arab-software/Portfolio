@@ -145,7 +145,7 @@ export const Projects = () => {
                 href={selectedProject.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-800 text-white rounded-lg flex items-center gap-2 mt-4"
+                className="px-4 py-2 bg-gray-800 text-white rounded-lg flex items-center gap-2 mt-4 hover:opacity-90"
               >
                 <FaGithub />
                 <span>GitHub</span>
