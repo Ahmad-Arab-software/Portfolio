@@ -1,8 +1,9 @@
-import React, { Suspense, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import { AboutMe } from "./AboutMe.jsx";
-import { Projects } from "./Projecten";
-import {Contact} from "./Contact.jsx"
+import { Projects } from "./Projecten.jsx";
+import { Contact } from "./Contact.jsx";
+import { Cards } from "./Cards.jsx"; // Import the Cards component
 
 const App = () => {
   return (
@@ -30,15 +31,18 @@ const App = () => {
       </nav>
 
       {/* Content sections */}
-      <div className="flex flex-col items-center w-full px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+      <div className="flex flex-col items-center w-full px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 mt-16">
         {/* AboutMe Section */}
         <AboutMe />
 
         {/* Projects Section */}
         <Projects />
-        {/* contact Section */}
+
+        {/* Contact Section */}
         <Contact />
-        
+
+        {/* Cards Section */}
+        <Cards /> {/* Use the Cards component here */}
       </div>
     </div>
   );
