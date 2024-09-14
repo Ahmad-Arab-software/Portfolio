@@ -78,7 +78,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     description: `
 Voor dit project heb ik 3D-modellen gemaakt in Blender en ze geïntegreerd met Three.js om interactieve personages te tonen. Gebruikers kunnen via knoppen tussen verschillende personages schakelen en hun unieke animaties activeren. Ik heb Orbit Controls toegevoegd, zodat gebruikers soepel rond de modellen kunnen draaien en ze van alle hoeken kunnen bekijken. De modellen worden weergegeven in GLB-formaat en zijn voorzien van lichtbronnen om realistische belichting te creëren. Dit project heeft me laten experimenteren met animatieclips en het wisselen van personages voor een vloeiende gebruikerservaring.`,
     image: threejs,
-    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />],
+    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/3d/page/index.html",
     githubUrl: "https://github.com/yourusername/project5", // Add GitHub URL
   },
