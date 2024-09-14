@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import {
-  FaExternalLinkAlt,
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaReact,
-  FaGithub, // Import GitHub icon
+  FaPhp,
+  FaExternalLinkAlt,
+  FaGithub,
 } from "react-icons/fa";
+import threejsImg from "./assets/ThreeJS.png"; // Replace with your image path
 import weather from "./assets/WeerApp.png";
 import SpiderMovie from "./assets/SpiderMovie.png";
 import Nutrition from "./assets/Nutrition.png";
 import Studenten from "./assets/StudentenOverzicht.png";
-import threejs from "./assets/3d.png";
-
+import Three from "./assets/3d.png";
 const projects = [
   {
     id: 1,
@@ -28,7 +28,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/weatherapp/index.html",
-    githubUrl: "https://github.com/yourusername/project1", // Add GitHub URL
+    githubUrl: "https://github.com/yourusername/project1",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     image: SpiderMovie,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/moviemaker/index.html",
-    githubUrl: "https://github.com/yourusername/project2", // Add GitHub URL
+    githubUrl: "https://github.com/yourusername/project2",
   },
   {
     id: 3,
@@ -59,28 +59,39 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     image: Nutrition,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl//XxlNutrition/index.html",
-    githubUrl: "https://github.com/yourusername/project3", // Add GitHub URL
+    githubUrl: "https://github.com/yourusername/project3",
   },
   {
     id: 4,
     title: "Project 4",
     date: "14-09-2024",
-    description: `Voor dit project heb ik een interactieve 3D-modelviewer ontwikkeld met Three.js en Blender. De applicatie laat gebruikers toe om tussen verschillende 3D-personages te schakelen en hun animaties te bekijken door op knoppen te klikken. Elk model wordt weergegeven in GLB-formaat en verlicht met lichtbronnen voor een realistische uitstraling. Door Orbit Controls toe te voegen, kunnen gebruikers soepel rond de modellen draaien en ze vanuit alle hoeken bekijken. Dit project demonstreert mijn vermogen om 3D-visualisaties en animaties te integreren in een webomgeving.`,
+    description: `
+Voor mijn schoolproject moest ik een webshop ontwikkelen zonder gebruik te maken van een back-end. Ondanks de uitdaging besloot ik om de webshop volledig af te ronden met een alternatieve aanpak. In plaats van een server te gebruiken, slaat mijn webshop gegevens op met behulp van localStorage.
+
+Wanneer gebruikers een product selecteren, wordt dit weergegeven met een afbeelding, naam en beschrijving. Via een knop kunnen ze het product aan hun winkelwagen toevoegen. Alle items worden opgeslagen in de browser, waardoor gebruikers hun winkelwagentje kunnen beheren en hun selectie kunnen bekijken zonder dat een server nodig is. Deze aanpak zorgt voor een soepele en functionele webshop, die volledig draait aan de client-side en een naadloze gebruikerservaring biedt.`,
     image: Studenten,
-    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
+    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/PROGRAM1-PHP2-Scaffolding-main/PROGRAM1-PHP2-Scaffolding-main/uitlees.php?classId=157f4b4d-4c36-4f53-bc14-0962695f7dbf&assignmentId=c74238d5-30f0-4759-8059-73618cdedbc7&submissionId=e9d86793-8f93-55b7-3353-216a2994f665",
-    githubUrl: "https://github.com/yourusername/project4", // Add GitHub URL
+    githubUrl: "https://github.com/yourusername/project4",
   },
   {
     id: 5,
     title: "Project 5",
     date: "02-06-2024",
-    description: `
-Voor dit project heb ik 3D-modellen gemaakt in Blender en ze geïntegreerd met Three.js om interactieve personages te tonen. Gebruikers kunnen via knoppen tussen verschillende personages schakelen en hun unieke animaties activeren. Ik heb Orbit Controls toegevoegd, zodat gebruikers soepel rond de modellen kunnen draaien en ze van alle hoeken kunnen bekijken. De modellen worden weergegeven in GLB-formaat en zijn voorzien van lichtbronnen om realistische belichting te creëren. Dit project heeft me laten experimenteren met animatieclips en het wisselen van personages voor een vloeiende gebruikerservaring.`,
-    image: threejs,
-    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
+    description: `Voor dit project heb ik 3D-modellen gemaakt in Blender en ze geïntegreerd met Three.js om interactieve personages te tonen. Gebruikers kunnen via knoppen tussen verschillende personages schakelen en hun unieke animaties activeren. Ik heb Orbit Controls toegevoegd, zodat gebruikers soepel rond de modellen kunnen draaien en ze van alle hoeken kunnen bekijken. De modellen worden weergegeven in GLB-formaat en zijn voorzien van lichtbronnen om realistische belichting te creëren. Dit project heeft me laten experimenteren met animatieclips en het wisselen van personages voor een vloeiende gebruikerservaring.`,
+    image: Three, // Use the placeholder image
+    languages: [
+      <FaHtml5 />,
+      <FaCss3Alt />,
+      <FaJs />,
+      <img
+        src={threejsImg}
+        alt="Three.js"
+        style={{ width: "24px", height: "24px" }}
+      />,
+    ],
     url: "https://088484.stu.sd-lab.nl/3d/page/index.html",
-    githubUrl: "https://github.com/yourusername/project5", // Add GitHub URL
+    githubUrl: "https://github.com/yourusername/project5",
   },
 ];
 
@@ -95,7 +106,7 @@ export const Projects = () => {
   return (
     <div
       id="projects"
-      className=" bg-[#f2fa9b] w-full h-full p-8 rounded-2xl shadow-lg flex flex-col items-center gap-4"
+      className="bg-[#f2fa9b] w-full h-full p-8 rounded-2xl shadow-lg flex flex-col items-center gap-4"
     >
       <h1 className="text-2xl sm:text-6xl font-cooper text-[#1f2e13] text-center">
         PROJECTS
