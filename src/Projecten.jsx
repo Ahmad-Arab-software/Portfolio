@@ -87,7 +87,7 @@ Wanneer gebruikers een product selecteren, wordt dit weergegeven met een afbeeld
       <img
         src={threejsImg}
         alt="Three.js"
-        style={{ width: "24px", height: "24px" }}
+        style={{ width: "30px", height: "30px" }}
       />,
     ],
     url: "https://088484.stu.sd-lab.nl/3d/page/index.html",
