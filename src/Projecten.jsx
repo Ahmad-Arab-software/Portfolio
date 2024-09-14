@@ -11,19 +11,20 @@ import weather from "./assets/WeerApp.png";
 import SpiderMovie from "./assets/SpiderMovie.png";
 import Nutrition from "./assets/Nutrition.png";
 import Studenten from "./assets/StudentenOverzicht.png";
+import threejs from "./assets/3d.png";
 
 const projects = [
   {
     id: 1,
     title: "Project 1",
     date: "07-05-2024",
-    description: `Ontdek onze weerapp, gebouwd met HTML, CSS en JavaScript en aangedreven door de OpenWeatherMap API. Krijg live weersinformatie zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
+    description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript, en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
 
-    Bekijk het weer voor je locatie of een andere stad met een paar tikken. 
+Met slechts een paar klikken kan ik het weer bekijken voor mijn huidige locatie of elke andere stad.
 
-    Als Progressive Web App (PWA) kun je de app downloaden en gebruiken zonder internet. Gegevens worden automatisch bijgewerkt zodra je online bent. 
+De app is een Progressive Web App (PWA), wat betekent dat ik deze kan downloaden en gebruiken zonder internetverbinding. De gegevens worden automatisch bijgewerkt zodra ik weer online ben.
 
-    Ontvang meldingen voor belangrijke weerwaarschuwingen en heb altijd snel toegang tot de belangrijkste informatie, waar je ook bent. Blijf moeiteloos op de hoogte van het weer!`,
+Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd snel toegang heb tot de meest relevante informatie, waar ik ook ben. Zo blijf ik moeiteloos op de hoogte van het weer!`,
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/weatherapp/index.html",
@@ -63,11 +64,8 @@ const projects = [
   {
     id: 4,
     title: "Project 4",
-    date: "04-04-2024",
-    description: `Voor dit project heb ik een PHP-webapplicatie ontwikkeld waarmee je studenten kunt beheren. Je kunt studenten toevoegen,
-    hun gegevens bewerken en ze verwijderen.
-    Met een simpele interface kun je nieuwe studenten invoeren, bestaande studenten aanpassen en ongewenste studenten verwijderen. 
-    Het systeem is gebouwd met PHP en MySQL en toont mijn vaardigheid in het creëren van praktische oplossingen voor gegevensbeheer.`,
+    date: "14-09-2024",
+    description: `Voor dit project heb ik een interactieve 3D-modelviewer ontwikkeld met Three.js en Blender. De applicatie laat gebruikers toe om tussen verschillende 3D-personages te schakelen en hun animaties te bekijken door op knoppen te klikken. Elk model wordt weergegeven in GLB-formaat en verlicht met lichtbronnen voor een realistische uitstraling. Door Orbit Controls toe te voegen, kunnen gebruikers soepel rond de modellen draaien en ze vanuit alle hoeken bekijken. Dit project demonstreert mijn vermogen om 3D-visualisaties en animaties te integreren in een webomgeving.`,
     image: Studenten,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/PROGRAM1-PHP2-Scaffolding-main/PROGRAM1-PHP2-Scaffolding-main/uitlees.php?classId=157f4b4d-4c36-4f53-bc14-0962695f7dbf&assignmentId=c74238d5-30f0-4759-8059-73618cdedbc7&submissionId=e9d86793-8f93-55b7-3353-216a2994f665",
@@ -76,12 +74,12 @@ const projects = [
   {
     id: 5,
     title: "Project 5",
-    date: "05-05-2024",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    image: "https://www.celoxis.com/cassets/img/pmc/project-management.png",
+    date: "02-06-2024",
+    description: `
+Voor dit project heb ik 3D-modellen gemaakt in Blender en ze geïntegreerd met Three.js om interactieve personages te tonen. Gebruikers kunnen via knoppen tussen verschillende personages schakelen en hun unieke animaties activeren. Ik heb Orbit Controls toegevoegd, zodat gebruikers soepel rond de modellen kunnen draaien en ze van alle hoeken kunnen bekijken. De modellen worden weergegeven in GLB-formaat en zijn voorzien van lichtbronnen om realistische belichting te creëren. Dit project heeft me laten experimenteren met animatieclips en het wisselen van personages voor een vloeiende gebruikerservaring.`,
+    image: threejs,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />],
-    url: "https://example.com/project5",
+    url: "https://088484.stu.sd-lab.nl/3d/page/index.html",
     githubUrl: "https://github.com/yourusername/project5", // Add GitHub URL
   },
 ];
