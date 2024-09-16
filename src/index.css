@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 /* Custom font import */
-
-
+* {
+  font-family: "Cooper";
+}
 /* Optional: Define some global typography defaults */
 body {
   font-family: "Cooper";
   background-color: #242424;
   font-weight: 500;
-
+}
+@font-face {
+  font-family: "Cooper";
+  src: local("Cooper"), url("./assets/fonts/Cooper.TTF") format(truetype);
 }
