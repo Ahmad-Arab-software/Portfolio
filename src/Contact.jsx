@@ -16,6 +16,16 @@ export const Contact = () => {
     }));
   };
 
+  const fetchIP = async () => {
+    try {
+      const response = await fetch("https://api.ipify.org?format=json");
+      const data = await response.json();
+      return data.ip;
+    } catch (error) {
+      console.error("Error fetching IP address:", error);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setResult("Sending...");
@@ -26,6 +36,7 @@ export const Contact = () => {
     formDataToSend.append("email", formData.email);
     formDataToSend.append("message", formData.message);
     formDataToSend.append("access_key", "c4e57788-0deb-42c7-ae7f-e7d17bc078e5"); // Your Web3Forms access key
+    formDataToSend.append("ip", await fetchIP());
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
