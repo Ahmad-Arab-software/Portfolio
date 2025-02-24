@@ -109,7 +109,7 @@ export const Projects = () => {
       className="bg-[#f2fa9b] w-full h-full p-8 rounded-2xl shadow-lg flex flex-col items-center gap-4"
     >
       <h1 className="text-2xl sm:text-6xl font-cooper text-[#1f2e13] text-center">
-        ahmad
+        PROJECTS
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
