@@ -17,7 +17,7 @@ import Soon from "./assets/Coming_soon.png";
 const originalProjects = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Project 3",
     date: "07-05-2024",
     description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript, en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
 
@@ -33,7 +33,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Project 4",
     date: "07-04-2024",
     description: `Voor mijn project heb ik gekozen voor de film Spider-Verse en een interactieve ervaring gecreëerd met een parallax-effect.
     Het doel was om het effect zo realistisch mogelijk te maken,
@@ -49,7 +49,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Project 1",
     date: "19-09-2024",
     description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
     Dit is een officieel project, ontwikkeld in teamverband voor onze school. Gedesigned en gecodeerd door mijzelf,
@@ -67,7 +67,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Project 2",
     date: "19-11-2024",
     description: `
 Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
