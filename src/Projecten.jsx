@@ -30,7 +30,7 @@ const originalProjectsData = [
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/weatherapp/index.html",
-    githubUrl: "https://github.com/yourusername/project1",
+    githubUrl: "https://github.com/school-Ahmad",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const originalProjectsData = [
     image: SpiderMovie,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/moviemaker/index.html",
-    githubUrl: "https://github.com/yourusername/project2",
+    githubUrl: "https://github.com/school-Ahmad",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const originalProjectsData = [
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/Ontkoking/php/index.php",
-    githubUrl: "https://github.com/yourusername/project3",
+    githubUrl: "https://github.com/school-Ahmad",
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     image: Yume,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/Yume/php/views/register.php",
-    githubUrl: "https://github.com/yourusername/project4",
+    githubUrl: "https://github.com/school-Ahmad",
   },
   {
     id: 5,
@@ -99,7 +99,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     image: Soon, // Use the placeholder image
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://ahmadarab.nl/",
-    githubUrl: "https://github.com/yourusername/project5",
+    githubUrl: "https://github.com/school-Ahmad",
   },
 ];
 
