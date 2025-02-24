@@ -28,7 +28,7 @@ export const AboutMe = () => {
               <FaFacebookF size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ahmad-arab-9a8190340/?trk=opento_sprofile_topcard"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1f2e13] text-[#f2fa9b] p-3 rounded-full hover:bg-[#1a260f]"

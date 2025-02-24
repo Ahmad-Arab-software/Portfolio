@@ -10,12 +10,12 @@ import {
 import threejsImg from "./assets/ThreeJS.png"; // Replace with your image path
 import weather from "./assets/WeerApp.png";
 import SpiderMovie from "./assets/SpiderMovie.png";
-import Nutrition from "./assets/Nutrition.png";
-import Studenten from "./assets/StudentenOverzicht.png";
-import Three from "./assets/3d.png";
+import Ontkoking from "./assets/Ontkoking.png";
+import Yume from "./assets/Yume_ramen.png";
+import Soon from "./assets/Coming_soon.png";
 const projects = [
   {
-    id: 1,
+    id: 3,
     title: "Project 1",
     date: "07-05-2024",
     description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript, en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
@@ -31,7 +31,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     githubUrl: "https://github.com/yourusername/project1",
   },
   {
-    id: 2,
+    id: 4,
     title: "Project 2",
     date: "07-04-2024",
     description: `Voor mijn project heb ik gekozen voor de film Spider-Verse en een interactieve ervaring gecreëerd met een parallax-effect.
@@ -47,50 +47,60 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     githubUrl: "https://github.com/yourusername/project2",
   },
   {
-    id: 3,
+    id: 1,
     title: "Project 3",
-    date: "03-03-2024",
-    description: `Voor mijn schoolproject moest ik een webshop ontwikkelen zonder gebruik te maken van een back-end.
-    Ondanks de uitdaging besloot ik de webshop volledig af te ronden. In plaats van een server te gebruiken, slaat mijn webshop gegevens op met localStorage.
-    Wanneer gebruikers een product selecteren, wordt dit weergegeven met een afbeelding, naam,
-    en beschrijving. Via een knop kunnen ze het product aan hun winkelwagen toevoegen. Alle items worden opgeslagen in de browser, 
-    zodat gebruikers hun winkelwagentje kunnen beheren zonder een server.
-    Dit alles zorgt voor een soepele en functionele webshop, volledig draaiend aan de client-side.`,
-    image: Nutrition,
-    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
-    url: "https://088484.stu.sd-lab.nl//XxlNutrition/index.html",
+    date: "19-09-2024",
+    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis! 
+    Dit is een officieel project, ontwikkeld in teamverband voor onze school. Gedesigned en gecodeerd door mijzelf,
+     met behulp van PHP, Tailwind CSS en JavaScript, en een MariaDB/SQL database, 
+     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen. 
+     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen – 
+     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor orderbeheer 
+     en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd over hun bestellingen. 
+     Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, wordt dé besteloplossing voor het hele GLR. 
+     Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
+    image: Ontkoking,
+    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
+    url: "https://088484.stu.sd-lab.nl/Ontkoking/php/index.php",
     githubUrl: "https://github.com/yourusername/project3",
   },
   {
-    id: 4,
+    id: 2,
     title: "Project 4",
-    date: "14-09-2024",
+    date: "19-11-2024",
     description: `
-Voor mijn schoolproject moest ik een webshop ontwikkelen zonder gebruik te maken van een back-end. Ondanks de uitdaging besloot ik om de webshop volledig af te ronden met een alternatieve aanpak. In plaats van een server te gebruiken, slaat mijn webshop gegevens op met behulp van localStorage.
-
-Wanneer gebruikers een product selecteren, wordt dit weergegeven met een afbeelding, naam en beschrijving. Via een knop kunnen ze het product aan hun winkelwagen toevoegen. Alle items worden opgeslagen in de browser, waardoor gebruikers hun winkelwagentje kunnen beheren en hun selectie kunnen bekijken zonder dat een server nodig is. Deze aanpak zorgt voor een soepele en functionele webshop, die volledig draait aan de client-side en een naadloze gebruikerservaring biedt.`,
-    image: Studenten,
+Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
+ en een MariaDB SQL database. Deze app,
+ met een Japans thema, biedt een complete bezorgoplossing voor een ramen restaurant. 
+ Ik heb zowel het design als de code zelf ontwikkeld. 
+ De app omvat functionaliteiten voor klanten, bezorgers en chefs. 
+ Klanten kunnen eenvoudig ramen bestellen, combideals bekijken en zelf gerechten samenstellen. 
+ Bezorgers en chefs kunnen via hun eigen dashboards de status van bestellingen bijhouden en updates geven aan de klant.
+ Alles is ontworpen voor een soepele en sfeervolle 
+ Japanse gebruikerservaring.
+.`,
+    image: Yume,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
-    url: "https://088484.stu.sd-lab.nl/PROGRAM1-PHP2-Scaffolding-main/PROGRAM1-PHP2-Scaffolding-main/uitlees.php?classId=157f4b4d-4c36-4f53-bc14-0962695f7dbf&assignmentId=c74238d5-30f0-4759-8059-73618cdedbc7&submissionId=e9d86793-8f93-55b7-3353-216a2994f665",
+    url: "https://088484.stu.sd-lab.nl/Yume/php/views/register.php",
     githubUrl: "https://github.com/yourusername/project4",
   },
   {
     id: 5,
     title: "Project 5",
-    date: "02-06-2024",
-    description: `Voor dit project heb ik 3D-modellen gemaakt in Blender en ze geïntegreerd met Three.js om interactieve personages te tonen. Gebruikers kunnen via knoppen tussen verschillende personages schakelen en hun unieke animaties activeren. Ik heb Orbit Controls toegevoegd, zodat gebruikers soepel rond de modellen kunnen draaien en ze van alle hoeken kunnen bekijken. De modellen worden weergegeven in GLB-formaat en zijn voorzien van lichtbronnen om realistische belichting te creëren. Dit project heeft me laten experimenteren met animatieclips en het wisselen van personages voor een vloeiende gebruikerservaring.`,
-    image: Three, // Use the placeholder image
-    languages: [
-      <FaHtml5 />,
-      <FaCss3Alt />,
-      <FaJs />,
-      <img
-        src={threejsImg}
-        alt="Three.js"
-        style={{ width: "30px", height: "30px" }}
-      />,
-    ],
-    url: "https://088484.stu.sd-lab.nl/3d/page/index.html",
+    date: "Heden",
+    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis! 
+    Dit is geen oefening, maar een officieel project, ontwikkeld in teamverband voor onze school.
+     Gebouwd met PHP, Tailwind CSS en JavaScript, ondersteund door een MariaDB/SQL database, 
+     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen. 
+     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen – 
+     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor 
+     orderbeheer en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd 
+     over hun bestellingen. Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, 
+     wordt dé besteloplossing voor het hele GLR.
+      Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
+    image: Soon, // Use the placeholder image
+    languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
+    url: "https://ahmadarab.nl/",
     githubUrl: "https://github.com/yourusername/project5",
   },
 ];
