@@ -14,18 +14,19 @@ import Ontkoking from "./assets/Ontkoking.png";
 import Yume from "./assets/Yume_ramen.png";
 import Soon from "./assets/Coming_soon.png";
 
-const originalProjects = [
+const originalProjectsData = [
   {
     id: 1,
-    title: "Project 3",
+    title: "Project 1",
     date: "07-05-2024",
-    description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript, en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
-
-Met slechts een paar klikken kan ik het weer bekijken voor mijn huidige locatie of elke andere stad.
-
-De app is een Progressive Web App (PWA), wat betekent dat ik deze kan downloaden en gebruiken zonder internetverbinding. De gegevens worden automatisch bijgewerkt zodra ik weer online ben.
-
-Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd snel toegang heb tot de meest relevante informatie, waar ik ook ben. Zo blijf ik moeiteloos op de hoogte van het weer!`,
+    description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript,
+    en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur,
+    weersomstandigheden, luchtvochtigheid en windrichting.
+    Met slechts een paar klikken kan ik het weer bekijken voor mijn huidige locatie of elke andere stad.
+    De app is een Progressive Web App (PWA), wat betekent dat ik deze kan downloaden en gebruiken zonder internetverbinding.
+    De gegevens worden automatisch bijgewerkt zodra ik weer online ben.
+    Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd snel toegang heb tot de meest relevante informatie,
+    waar ik ook ben. Zo blijf ik moeiteloos op de hoogte van het weer!`,
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/weatherapp/index.html",
@@ -33,7 +34,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 2,
-    title: "Project 4",
+    title: "Project 2",
     date: "07-04-2024",
     description: `Voor mijn project heb ik gekozen voor de film Spider-Verse en een interactieve ervaring gecreëerd met een parallax-effect.
     Het doel was om het effect zo realistisch mogelijk te maken,
@@ -49,7 +50,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 3,
-    title: "Project 1",
+    title: "Project 3",
     date: "19-09-2024",
     description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
     Dit is een officieel project, ontwikkeld in teamverband voor onze school. Gedesigned en gecodeerd door mijzelf,
@@ -67,7 +68,7 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
   },
   {
     id: 4,
-    title: "Project 2",
+    title: "Project 4",
     date: "19-11-2024",
     description: `
 Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
@@ -106,14 +107,21 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
   },
 ];
 
-// Reorder the projects array
-const projects = [
-  originalProjects[2], // Project 3 at index 0
-  originalProjects[1], // Project 2 at index 1
-  originalProjects[0], // Project 1 at index 2
-  originalProjects[3], // Project 4 at index 3
-  originalProjects[4], // Project 5 at index 4
-];
+// Reorder and rename projects based on user request
+const reorderedProjectsData = [
+  originalProjectsData[2], // Project 3 -> Project 1
+  originalProjectsData[3], // Project 4 -> Project 2
+  originalProjectsData[0], // Project 1 -> Project 3
+  originalProjectsData[1], // Project 2 -> Project 4
+  originalProjectsData[4], // Project 5 -> Project 5
+].map((project, index) => ({
+  ...project,
+  id: index + 1, // Re-assign IDs sequentially
+  title: `Project ${index + 1}`, // Update titles to Project 1, Project 2, etc.
+}));
+
+const projects = reorderedProjectsData;
+
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
@@ -141,7 +149,8 @@ export const Projects = () => {
           <img
             src={selectedProject.image}
             alt={selectedProject.title}
-            className="rounded-lg object-cover col-start-1 row-start-1 h-full"
+            className="rounded-lg object-contain col-start-1 row-start-1 h-full" // object-contain added
+            style={{ maxHeight: '400px' }} // Added max height to make images similar in size. Adjust as needed.
           />
           <div className="col-start-1 row-start-1 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
             <div className="text-white text-2xl font-bold">
