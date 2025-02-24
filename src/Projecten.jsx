@@ -36,13 +36,12 @@ const originalProjectsData = [
     id: 2,
     title: "Project 2",
     date: "07-04-2024",
-    description: `Voor mijn project heb ik gekozen voor de film Spider-Verse en een interactieve ervaring gecreëerd met een parallax-effect.
-    Het doel was om het effect zo realistisch mogelijk te maken,
-    waarbij het lijkt alsof je naar een 3D-karakter kijkt. Door gebruik te maken van een op maat gemaakte scrollbar en een dynamische galerij,
-    kunnen bezoekers door verschillende afbeeldingen van personages scrollen die allemaal zijn gemaakt met Blender.
-    Een uitdaging bij het gebruik van het parallax-effect is dat het op kleinere schermen iets minder mooi kan zijn.
-    Desondanks heb ik geprobeerd om de ervaring zo vloeiend en boeiend mogelijk te maken,
-    met een naadloze overgang tussen afbeeldingen en een aantrekkelijke presentatie voor de fans van de film.`,
+    description: `Ontdek mijn interactieve Spider-Verse ervaring, gebouwd met een geavanceerd parallax-effect voor een meeslepende 3D-illusie.
+     Deze webervaring combineert een op maat gemaakte scrollbar en een dynamische galerij, waarin bezoekers door Blender-gecreëerde personageafbeeldingen kunnen scrollen. 
+     Mijn focus lag op een vloeiende en realistische visuele presentatie die de sfeer van de film weerspiegelt.
+      Hoewel het parallax-effect op kleinere schermen iets minder optimaal presteert, 
+      heb ik de overgang tussen beelden zo soepel en boeiend mogelijk gemaakt. 
+      Dit project biedt een innovatieve en visueel aantrekkelijke beleving voor fans van de Spider-Verse.`,
     image: SpiderMovie,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://088484.stu.sd-lab.nl/moviemaker/index.html",
@@ -52,15 +51,12 @@ const originalProjectsData = [
     id: 3,
     title: "Project 3",
     date: "19-09-2024",
-    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
-    Dit is een officieel project, ontwikkeld in teamverband voor onze school. Gedesigned en gecodeerd door mijzelf,
-     met behulp van PHP, Tailwind CSS en JavaScript, en een MariaDB/SQL database,
-     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen.
-     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen –
-     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor orderbeheer
-     en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd over hun bestellingen.
-     Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, wordt dé besteloplossing voor het hele GLR.
-     Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
+    description: `Ontdek mijn digitale platform ‘Stop de ontkoking’, 
+    ontwikkeld om Generatie Z te inspireren de keuken in te duiken! Met behulp van PHP, 
+    Tailwind CSS en JavaScript, en een MariaDB database, heb ik een receptenwebsite gebouwd die de ‘ontkoking’ trend tegengaat.
+     Gebruikers kunnen recepten bekijken (opgehaald via een API!), ‘liken’ om ze op te slaan, en zelfs eigen recepten toevoegen. 
+     Om het beheer te vereenvoudigen, is er een admin-gedeelte gecreëerd in de backend. Hier kan de administrator gebruikers beheren: 
+     accounts verwijderen, wachtwoorden en e-mailadressen aanpassen.`,
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/Ontkoking/php/index.php",
@@ -80,7 +76,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
  Bezorgers en chefs kunnen via hun eigen dashboards de status van bestellingen bijhouden en updates geven aan de klant.
  Alles is ontworpen voor een soepele en sfeervolle
  Japanse gebruikerservaring.
-.`,
+`,
     image: Yume,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/Yume/php/views/register.php",
