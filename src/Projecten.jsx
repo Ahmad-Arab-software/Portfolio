@@ -13,9 +13,10 @@ import SpiderMovie from "./assets/SpiderMovie.png";
 import Ontkoking from "./assets/Ontkoking.png";
 import Yume from "./assets/Yume_ramen.png";
 import Soon from "./assets/Coming_soon.png";
-const projects = [
+
+const originalProjects = [
   {
-    id: 3,
+    id: 1,
     title: "Project 1",
     date: "07-05-2024",
     description: `Ontdek mijn weerapp, die ik heb gebouwd met HTML, CSS en JavaScript, en die gebruikmaakt van de OpenWeatherMap API. De app biedt live weersinformatie, zoals temperatuur, weersomstandigheden, luchtvochtigheid en windrichting.
@@ -31,14 +32,14 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     githubUrl: "https://github.com/yourusername/project1",
   },
   {
-    id: 4,
+    id: 2,
     title: "Project 2",
     date: "07-04-2024",
     description: `Voor mijn project heb ik gekozen voor de film Spider-Verse en een interactieve ervaring gecreëerd met een parallax-effect.
     Het doel was om het effect zo realistisch mogelijk te maken,
-    waarbij het lijkt alsof je naar een 3D-karakter kijkt. Door gebruik te maken van een op maat gemaakte scrollbar en een dynamische galerij, 
+    waarbij het lijkt alsof je naar een 3D-karakter kijkt. Door gebruik te maken van een op maat gemaakte scrollbar en een dynamische galerij,
     kunnen bezoekers door verschillende afbeeldingen van personages scrollen die allemaal zijn gemaakt met Blender.
-    Een uitdaging bij het gebruik van het parallax-effect is dat het op kleinere schermen iets minder mooi kan zijn. 
+    Een uitdaging bij het gebruik van het parallax-effect is dat het op kleinere schermen iets minder mooi kan zijn.
     Desondanks heb ik geprobeerd om de ervaring zo vloeiend en boeiend mogelijk te maken,
     met een naadloze overgang tussen afbeeldingen en een aantrekkelijke presentatie voor de fans van de film.`,
     image: SpiderMovie,
@@ -47,17 +48,17 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     githubUrl: "https://github.com/yourusername/project2",
   },
   {
-    id: 1,
+    id: 3,
     title: "Project 3",
     date: "19-09-2024",
-    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis! 
+    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
     Dit is een officieel project, ontwikkeld in teamverband voor onze school. Gedesigned en gecodeerd door mijzelf,
-     met behulp van PHP, Tailwind CSS en JavaScript, en een MariaDB/SQL database, 
-     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen. 
-     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen – 
-     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor orderbeheer 
-     en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd over hun bestellingen. 
-     Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, wordt dé besteloplossing voor het hele GLR. 
+     met behulp van PHP, Tailwind CSS en JavaScript, en een MariaDB/SQL database,
+     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen.
+     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen –
+     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor orderbeheer
+     en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd over hun bestellingen.
+     Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, wordt dé besteloplossing voor het hele GLR.
      Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
@@ -65,18 +66,18 @@ Ik ontvang ook meldingen voor belangrijke weerwaarschuwingen, zodat ik altijd sn
     githubUrl: "https://github.com/yourusername/project3",
   },
   {
-    id: 2,
+    id: 4,
     title: "Project 4",
     date: "19-11-2024",
     description: `
 Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
  en een MariaDB SQL database. Deze app,
- met een Japans thema, biedt een complete bezorgoplossing voor een ramen restaurant. 
- Ik heb zowel het design als de code zelf ontwikkeld. 
- De app omvat functionaliteiten voor klanten, bezorgers en chefs. 
- Klanten kunnen eenvoudig ramen bestellen, combideals bekijken en zelf gerechten samenstellen. 
+ met een Japans thema, biedt een complete bezorgoplossing voor een ramen restaurant.
+ Ik heb zowel het design als de code zelf ontwikkeld.
+ De app omvat functionaliteiten voor klanten, bezorgers en chefs.
+ Klanten kunnen eenvoudig ramen bestellen, combideals bekijken en zelf gerechten samenstellen.
  Bezorgers en chefs kunnen via hun eigen dashboards de status van bestellingen bijhouden en updates geven aan de klant.
- Alles is ontworpen voor een soepele en sfeervolle 
+ Alles is ontworpen voor een soepele en sfeervolle
  Japanse gebruikerservaring.
 .`,
     image: Yume,
@@ -88,14 +89,14 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     id: 5,
     title: "Project 5",
     date: "Heden",
-    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis! 
+    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
     Dit is geen oefening, maar een officieel project, ontwikkeld in teamverband voor onze school.
-     Gebouwd met PHP, Tailwind CSS en JavaScript, ondersteund door een MariaDB/SQL database, 
-     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen. 
-     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen – 
-     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor 
-     orderbeheer en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd 
-     over hun bestellingen. Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl, 
+     Gebouwd met PHP, Tailwind CSS en JavaScript, ondersteund door een MariaDB/SQL database,
+     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen.
+     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen –
+     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor
+     orderbeheer en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd
+     over hun bestellingen. Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl,
      wordt dé besteloplossing voor het hele GLR.
       Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
     image: Soon, // Use the placeholder image
@@ -103,6 +104,15 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     url: "https://ahmadarab.nl/",
     githubUrl: "https://github.com/yourusername/project5",
   },
+];
+
+// Reorder the projects array
+const projects = [
+  originalProjects[2], // Project 3 at index 0
+  originalProjects[1], // Project 2 at index 1
+  originalProjects[0], // Project 1 at index 2
+  originalProjects[3], // Project 4 at index 3
+  originalProjects[4], // Project 5 at index 4
 ];
 
 export const Projects = () => {
