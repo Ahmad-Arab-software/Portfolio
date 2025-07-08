@@ -105,11 +105,11 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
 
 // Reorder and rename projects based on user request
 const reorderedProjectsData = [
-  originalProjectsData[2], // Project 3 -> Project 1
+  originalProjectsData[4], // Project 3 -> Project 1
   originalProjectsData[3], // Project 4 -> Project 2
-  originalProjectsData[4], // Project 1 -> Project 3
+  originalProjectsData[0], // Project 1 -> Project 3
   originalProjectsData[1], // Project 2 -> Project 4
-  originalProjectsData[0], // Project 5 -> Project 5
+  originalProjectsData[2], // Project 5 -> Project 5
 ].map((project, index) => ({
   ...project,
   id: index + 1, // Re-assign IDs sequentially
