@@ -86,19 +86,21 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     id: 5,
     title: "Project 5",
     date: "Heden",
-    description: `Ontdek mijn innovatieve bestelsysteem voor het GLR Productiehuis!
-    Dit is geen oefening, maar een officieel project, ontwikkeld in teamverband voor onze school.
-     Gebouwd met PHP, Tailwind CSS en JavaScript, ondersteund door een MariaDB/SQL database,
-     creëren we een centraal platform waar alle GLR studenten eenvoudig print- en signwerk kunnen bestellen.
-     Van een sfeervolle homepage, product- en machinepagina's tot een persoonlijk dashboard en winkelwagen –
-     elke functionaliteit is gericht op gebruiksgemak. Voor beheerders is er een krachtig admin gedeelte voor
-     orderbeheer en productaanpassingen. Dankzij real-time statusupdates blijven studenten perfect geïnformeerd
-     over hun bestellingen. Dit systeem, ontworpen in de herkenbare GLR en CP huisstijl,
-     wordt dé besteloplossing voor het hele GLR.
-      Ervaar het gemak en de efficiëntie van een bestelsysteem, speciaal gemaakt voor en door het GLR!`,
+    description: `Een officieel project, gebouwd in teamverband voor het Grafisch Lyceum Rotterdam. Met PHP, Tailwind CSS, JavaScript en een MariaDB-database ontwikkelden we een centraal platform waar studenten eenvoudig print- en signopdrachten kunnen bestellen.
+
+Het systeem bevat een gebruiksvriendelijke website met productpagina’s, machine-info, een winkelwagen en een persoonlijk dashboard. Voor beheerders is er een adminomgeving met orderbeheer, productbeheer en realtime statusupdates. Alles is vormgegeven in GLR-stijl, gericht op gemak en efficiëntie.
+
+🔧 Techniek: PHP, Tailwind, JavaScript, MySQLi
+🔑 Testaccounts:
+
+Gebruiker: student1 / student1
+
+Admin: docent123 / docent123
+
+Dé besteloplossing – gemaakt voor én door het GLR.`,
     image: Soon, // Use the placeholder image
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
-    url: "https://ahmadarab.nl/",
+    url: "https://088484.stu.sd-lab.nl/test_ph/index.php?page=login",
     githubUrl: "https://github.com/school-Ahmad",
   },
 ];
