@@ -107,9 +107,9 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
 const reorderedProjectsData = [
   originalProjectsData[2], // Project 3 -> Project 1
   originalProjectsData[3], // Project 4 -> Project 2
-  originalProjectsData[0], // Project 1 -> Project 3
+  originalProjectsData[4], // Project 1 -> Project 3
   originalProjectsData[1], // Project 2 -> Project 4
-  originalProjectsData[4], // Project 5 -> Project 5
+  originalProjectsData[0], // Project 5 -> Project 5
 ].map((project, index) => ({
   ...project,
   id: index + 1, // Re-assign IDs sequentially
@@ -117,7 +117,6 @@ const reorderedProjectsData = [
 }));
 
 const projects = reorderedProjectsData;
-
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
@@ -146,7 +145,7 @@ export const Projects = () => {
             src={selectedProject.image}
             alt={selectedProject.title}
             className="rounded-lg object-contain col-start-1 row-start-1 h-full" // object-contain added
-            style={{ maxHeight: '400px' }} // Added max height to make images similar in size. Adjust as needed.
+            style={{ maxHeight: "400px" }} // Added max height to make images similar in size. Adjust as needed.
           />
           <div className="col-start-1 row-start-1 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
             <div className="text-white text-2xl font-bold">
