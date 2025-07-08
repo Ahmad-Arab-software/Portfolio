@@ -90,7 +90,6 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
 
 Het systeem bevat een gebruiksvriendelijke website met productpagina’s, machine-info, een winkelwagen en een persoonlijk dashboard. Voor beheerders is er een adminomgeving met orderbeheer, productbeheer en realtime statusupdates. Alles is vormgegeven in GLR-stijl, gericht op gemak en efficiëntie.
 
-🔧 Techniek: PHP, Tailwind, JavaScript, MySQLi
 🔑 Testaccounts:
 
 Gebruiker: student1 / student1
