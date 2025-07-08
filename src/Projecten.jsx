@@ -86,17 +86,23 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     id: 5,
     title: "Project 5",
     date: "Heden",
-    description: `Een officieel project, gebouwd in teamverband voor het Grafisch Lyceum Rotterdam. Met PHP, Tailwind CSS, JavaScript en een MariaDB-database ontwikkelden we een centraal platform waar studenten eenvoudig print- en signopdrachten kunnen bestellen.
-
-Het systeem bevat een gebruiksvriendelijke website met productpagina’s, machine-info, een winkelwagen en een persoonlijk dashboard. Voor beheerders is er een adminomgeving met orderbeheer, productbeheer en realtime statusupdates. Alles is vormgegeven in GLR-stijl, gericht op gemak en efficiëntie.
-
-🔑 Testaccounts:
-
-Gebruiker: student1 / student1
-
-Admin: docent123 / docent123
-
-Dé besteloplossing – gemaakt voor én door het GLR.`,
+    description: (
+      <>
+        Een officieel project, gebouwd in teamverband voor het Grafisch Lyceum
+        Rotterdam. Met PHP, Tailwind CSS, JavaScript en een MariaDB-database
+        ontwikkelden we een centraal platform waar studenten eenvoudig print- en
+        signopdrachten kunnen bestellen. Het systeem bevat een
+        gebruiksvriendelijke website met productpagina's, machine-info, een
+        winkelwagen en een persoonlijk dashboard. Voor beheerders is er een
+        adminomgeving met orderbeheer, productbeheer en realtime statusupdates.
+        Alles is vormgegeven in GLR-stijl, gericht op gemak en efficiëntie.
+        <br />
+        Testaccounts:
+        <br /> Gebruiker: student1 ww: student1 <br />
+        Admin: docent123 ww: docent123 <br />
+        De besteloplossing, gemaakt voor het GLR.
+      </>
+    ),
     image: Soon, // Use the placeholder image
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://088484.stu.sd-lab.nl/test_ph/index.php?page=login",
