@@ -29,7 +29,7 @@ const originalProjectsData = [
     waar ik ook ben. Zo blijf ik moeiteloos op de hoogte van het weer!`,
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
-    url: "https://088484.stu.sd-lab.nl/weatherapp/index.html",
+    url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/weatherapp/index.html",
     githubUrl: "https://github.com/school-Ahmad",
   },
   {
@@ -44,7 +44,7 @@ const originalProjectsData = [
       Dit project biedt een innovatieve en visueel aantrekkelijke beleving voor fans van de Spider-Verse.`,
     image: SpiderMovie,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
-    url: "https://088484.stu.sd-lab.nl/moviemaker/index.html",
+    url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/moviemaker/index.html",
     githubUrl: "https://github.com/school-Ahmad",
   },
   {
@@ -59,7 +59,7 @@ const originalProjectsData = [
      accounts verwijderen, wachtwoorden en e-mailadressen aanpassen.`,
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
-    url: "https://088484.stu.sd-lab.nl/Ontkoking/php/index.php",
+    url: "https://ahmad-projects.infinityfreeapp.com/data2_project/Ontkoking/php/index.php",
     githubUrl: "https://github.com/school-Ahmad",
   },
   {
@@ -79,13 +79,13 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
 `,
     image: Yume,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
-    url: "https://088484.stu.sd-lab.nl/Yume/php/views/register.php",
+    url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/Yume/php/views/login.php",
     githubUrl: "https://github.com/school-Ahmad",
   },
   {
     id: 5,
     title: "Project 5",
-    date: "Heden",
+    date: "Deze website is tijdelijk offline omdat het onderdeel is van een schoolproject en de school alle servers tijdelijk heeft uitgeschakeld.",
     description: (
       <>
         Een officieel project, gebouwd in door mij voor het Grafisch Lyceum
@@ -105,7 +105,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     ),
     image: Soon, // Use the placeholder image
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
-    url: "https://088484.stu.sd-lab.nl/test_ph/index.php?page=login",
+    url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/test_ph/index.php?page=login",
     githubUrl: "https://github.com/school-Ahmad",
   },
 ];
