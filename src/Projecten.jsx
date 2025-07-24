@@ -85,7 +85,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
   {
     id: 5,
     title: "Project 5",
-    date: "Deze website is tijdelijk offline omdat het onderdeel is van een schoolproject en de school alle servers tijdelijk heeft uitgeschakeld.",
+    date: "Offline wegens school servers.",
     description: (
       <>
         Een officieel project, gebouwd in door mij voor het Grafisch Lyceum
