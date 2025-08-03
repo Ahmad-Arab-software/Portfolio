@@ -88,14 +88,14 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     date: "Offline wegens school servers.",
     description: (
       <>
-        Een officieel project, gebouwd in door mij voor het Grafisch Lyceum
-        Rotterdam. Met PHP, Tailwind CSS, JavaScript en een MariaDB-database
-        ontwikkelden ik een centraal platform waar studenten eenvoudig print- en
-        signopdrachten kunnen bestellen. Het systeem bevat een
-        gebruiksvriendelijke website met productpagina's, machine-info, een
-        winkelwagen en een persoonlijk dashboard. Voor beheerders is er een
-        adminomgeving met orderbeheer, productbeheer en realtime statusupdates.
-        Alles is vormgegeven in GLR-stijl, gericht op gemak en efficiëntie.
+        Bekijk mijn officiële schoolproject, ontwikkeld voor het Grafisch Lyceum
+        Rotterdam. Met PHP, Tailwind CSS, JavaScript en een MariaDB SQL database
+        bouwde ik een offline bestelplatform voor print- en signopdrachten.
+        Studenten kunnen producten bekijken, machine-informatie lezen, en
+        eenvoudig opdrachten plaatsen via hun persoonlijke dashboard. Voor
+        beheerders is er een aparte adminomgeving met orderbeheer,
+        productaanpassing en realtime statusupdates. Alles is ontworpen in
+        GLR-stijl en gericht op efficiënt en intuïtief gebruik.
         <br />
         Testaccounts:
         <br /> Gebruiker: student1 ww: student1 <br />
