@@ -100,7 +100,6 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
         Testaccounts:
         <br /> Gebruiker: student1 ww: student1 <br />
         Admin: docent123 ww: docent123 <br />
-        De besteloplossing, gemaakt voor het GLR.
       </>
     ),
     image: Soon, // Use the placeholder image
