@@ -30,7 +30,7 @@ const originalProjectsData = [
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/weatherapp/index.html",
-    githubUrl: "https://github.com/Ahmad-Arab-software",
+    githubUrl: "https://github.com/Ahmad-Arab-software/Weer-Applicatie",
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const originalProjectsData = [
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://ahmad-projects.infinityfreeapp.com/data2_project/Ontkoking/php/index.php",
-    githubUrl: "hhttps://github.com/Ahmad-Arab-software/Healthy-Food-Community",
+    githubUrl: "https://github.com/Ahmad-Arab-software/Healthy-Food-Community",
   },
   {
     id: 4,
