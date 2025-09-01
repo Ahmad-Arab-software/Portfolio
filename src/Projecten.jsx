@@ -30,7 +30,7 @@ const originalProjectsData = [
     image: weather,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/weatherapp/index.html",
-    githubUrl: "https://github.com/school-Ahmad",
+    githubUrl: "https://github.com/Ahmad-Arab-software",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const originalProjectsData = [
     image: SpiderMovie,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
     url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/moviemaker/index.html",
-    githubUrl: "https://github.com/school-Ahmad",
+    githubUrl: "https://github.com/Ahmad-Arab-software",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const originalProjectsData = [
     image: Ontkoking,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://ahmad-projects.infinityfreeapp.com/data2_project/Ontkoking/php/index.php",
-    githubUrl: "https://github.com/school-Ahmad",
+    githubUrl: "https://github.com/Ahmad-Arab-software",
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     image: Yume,
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/Yume/php/views/login.php",
-    githubUrl: "https://github.com/school-Ahmad",
+    githubUrl: "https://github.com/Ahmad-Arab-software",
   },
   {
     id: 5,
@@ -106,7 +106,7 @@ Ontdek mijn bezorgapp, Yume Ramen, gebouwd met PHP, Tailwind CSS, JavaScript
     image: Soon, // Use the placeholder image
     languages: [<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaPhp />],
     url: "https://ahmad-projects.infinityfreeapp.com/beroeps_project/test_ph/index.php?page=login",
-    githubUrl: "https://github.com/school-Ahmad",
+    githubUrl: "https://github.com/Ahmad-Arab-software",
   },
 ];
 
